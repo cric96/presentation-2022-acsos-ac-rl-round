@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "Todo: A title"
+title = "Addressing Collective Computations Efficiency"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
