@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
 	<meta name="generator" content="Hugo 0.102.3">
     <meta charset="utf-8">
-<title>Guide for writing markdown slides</title>
+<title>Addressing Collective Computations Efficiency</title>
 <meta name="description" content="A Hugo theme for creating Reveal.js presentations">
 <meta name="author" content="Gianluca Aguzzi">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-js/dist/reset.css">
 <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-js/dist/reveal.css">
-  <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/css/custom-theme.min.1693d5a293704c5c05b991e91ba13813a73aedc6163442f5ebd61de56e8daa31.css" id="theme"><link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/highlight-js/solarized-dark.min.css">
+  <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/css/custom-theme.min.c4056ad82765e545386f2e5d0dacc8c95e577fb5245eca85224a4dfb651a75b9.css" id="theme"><link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/highlight-js/solarized-dark.min.css">
     
 <link rel="stylesheet" href="https://gitcdn.link/repo/DanySK/css-blur-animation/master/blur.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
@@ -29,40 +29,261 @@
 <p>🎤 <strong>Gianluca Aguzzi</strong>, Roberto Casedei, Viroli Mirko</p>
 <p>📧 <a href="mailto:gianluca.aguzzi@unibo.it">gianluca.aguzzi@unibo.it</a></p>
 </section><section>
-<h1 id="aggregate-computing">Aggregate Computing</h1>
-<h2 class="accent" id="super-condensed-overview">Super-Condensed Overview</h2>
-<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
+<h1 class="accent" id="collective-adaptive-systems">Collective Adaptive Systems</h1>
 <div class="container">
 <span class="fragment col">
-  <h3 class="accent" id="computational-field">Computational Field</h3>
+  <h4 id="many-networked-agents">Many Networked Agents</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+<span class="fragment col">
+  <h4 id="cyber-physical-systems">Cyber-Physical Systems</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/cps.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+<span class="fragment col">
+  <h4 id="collective-behaviour">Collective Behaviour</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ci.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+</div>
+</section><section>
+<h1 class="accent" id="applications">Applications</h1>
+<div class="container">
+<span class="fragment col">
+  <h3 id="swarm-robotics">Swarm Robotics</h3>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/swarm.jpg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+<span class="fragment col">
+  <h3 id="crowd-engineering">Crowd Engineering</h3>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/crowd.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+<span class="fragment col">
+  <h3 id="smart-cities">Smart Cities</h3>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/smart-city.jpg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+</div>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model">Execution Model</h2>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model-1">Execution Model</h2>
+<h3 id="how">How</h3>
+<h3 id="when">When</h3>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model-2">Execution Model</h2>
+<h3 class="accent" id="how-1">How</h3>
+<div class="container">
+<div class="col ">
+<h4 id="sense">Sense</h4>
+</div>
+<div class="col ">
+<h4 id="compute">Compute</h4>
+</div>
+<div class="col ">
+<h4 id="act">Act</h4>
+</div>
+</div>
+<h3 id="when-1">When</h3>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model-3">Execution Model</h2>
+<h3 class="accent" id="how-2">How</h3>
+<div class="container">
+<div class="col ">
+<h4 class="highlight" id="sense">Sense</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-1.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div>
+<div class="col ">
+<h4 id="compute">Compute</h4>
+</div>
+<div class="col ">
+<h4 id="act" class="highlight">Act</h4>
+</div>
+</div>
+<h3 id="when-2">When</h3>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model-4">Execution Model</h2>
+<h3 class="accent" id="how-3">How</h3>
+<div class="container">
+<div class="col ">
+<h4 id="sense">Sense</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-1.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div>
+<div class="col ">
+<h4 class="highlight" id="compute">Compute</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-2.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div>
+<div class="col ">
+<h4 id="act">Act</h4>
+</div>
+</div>
+<h3 id="when-3">When</h3>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model-5">Execution Model</h2>
+<h3 class="accent" id="how-4">How </h3>
+<div class="container">
+<div class="col ">
+<h4 id="sense">Sense</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-1.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div>
+<div class="col ">
+<h4 id="compute">Compute</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-2.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div>
+<div class="col ">
+<h4 class="highlight" id="act">Act</h4>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-3.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div>
+</div>
+<h3 id="when-4">When</h3>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model-6">Execution Model</h2>
+<h3 id="how-5">How</h3>
+<h3 class="accent" id="when-5">When</h3>
+<ul>
+<li><span class="highlight">Reactive</span>
+<ul>
+<li>Messaged-based</li>
+<li>Sensor-based</li>
+<li>Event-based</li>
+</ul>
+</li>
+<li>Proactive</li>
+</ul>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 id="execution-model-7">Execution Model</h2>
+<h3 id="how-6">How</h3>
+<h3 class="accent" id="when-6">When</h3>
+<ul>
+<li>Reactive
+<ul>
+<li>Messaged-based</li>
+<li>Sensor-based</li>
+<li>Event-based</li>
+</ul>
+</li>
+<li><span class="highlight">Proactive</span></li>
+</ul>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="aggregate-computing">Aggregate Computing</h1>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="aggregate-computing-1">Aggregate Computing</h1>
+<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
+<div class="container">
+<div class="col ">
+</div></div></section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="aggregate-computing">Aggregate Computing</h1>
+<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
+<div class="container">
+<div class="col ">
+<h3 class="accent" id="computational-field">Computational Field</h3>
 <figure class="">
     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ac.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
-</span>
-<span class="fragment col">
-  <h3 class="accent" id="field-calculus">Field Calculus</h3>
+</div> 
+</div>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="aggregate-computing-1">Aggregate Computing</h1>
+<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
+<div class="container">
+<div class="col ">
+<h3 class="accent" id="computational-field">Computational Field</h3>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ac.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div> 
+<div class="col ">
+<h3 class="accent" id="field-calculus">Field Calculus</h3>
 <figure class="">
     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/high-level-examples.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
-</span>
-<span class="fragment col">
-  <h3 class="accent" id="composable-api">Composable API</h3>
+</div> 
+</div>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="aggregate-computing-2">Aggregate Computing</h1>
+<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
+<div class="container">
+<div class="col ">
+<h3 class="accent" id="computational-field">Computational Field</h3>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ac.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div> 
+<div class="col ">
+<h3 class="accent" id="field-calculus">Field Calculus</h3>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/high-level-examples.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</div>
+<div class="col ">
+<h3 class="accent" id="composable-api">Composable API</h3>
 <figure class="">
     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/full-stack.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
-</span>
-</div></section>
+</div>
+</div>
+</section><section>
+</section></div>
+</div>
 
   
 
 
-</div>
+
       
 
-    </div>
+    
 <script type="text/javascript" src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-hugo/object-assign.js"></script>
 
 <a href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-js/dist/print/" id="print-location" style="display: none;"></a>
