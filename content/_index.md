@@ -54,8 +54,21 @@ aliases = [
 ### Use cases
 - Monitoring Wild fires in forests
 - Crowd engineering
-- Avalance monitoring
-- Agriculture Field monitoring
+- Avalanche monitoring
+- Agriculture Monitoring System
+
+{{% row %}}
+{{% col %}}
+{{< image height=30 src="/crowd.png"  >}}
+{{% /col %}}
+{{% col %}}
+{{< image height=30 src="/swarms.jpg"  >}}
+{{% /col %}}
+{{% col %}}
+{{< image height=30 src="/wild-fire.jpg"  >}}
+{{% /col %}}
+{{% /row %}}
+
 ---
 # How
 ## Collective pattern {.accent } 
@@ -399,6 +412,7 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
 ---
 {{% slide auto-animate=true %}}
 # Simulation Configuration
+## Goal
 ## Training {.accent}
 {{% video src="/scenario.mp4" %}}
 ## Evaluation
