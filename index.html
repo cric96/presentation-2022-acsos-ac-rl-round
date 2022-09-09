@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-js/dist/reset.css">
 <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-js/dist/reveal.css">
-  <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/css/custom-theme.min.7370a58a6eaffec843a6f8bc318a491d50662258c94230843126f26a6a655ef1.css" id="theme"><link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/highlight-js/solarized-dark.min.css">
+  <link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/css/custom-theme.min.1d16dc161e94bd44c6d9f19fcf6b367114e456b5f14c756f2ac45ab60af5afbe.css" id="theme"><link rel="stylesheet" href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/highlight-js/solarized-dark.min.css">
     
 <link rel="stylesheet" href="https://gitcdn.link/repo/DanySK/css-blur-animation/master/blur.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
@@ -27,348 +27,65 @@
 <h1 class="r-fit-text" id="addressing-collective-computations-efficiency">Addressing Collective Computations Efficiency</h1>
 <h2 class="r-fit-text accent" id="towards-a-platform-level-reinforcement-learning-approach">Towards a Platform-level Reinforcement Learning Approach</h2>
 <p class="accent"><strong>Talk @ ACSOS 2022</strong></p>
-<p>🎤 <em>Gianluca Aguzzi</em>, Roberto Casedei, Viroli Mirko</p>
+<p>🎤 <em>Gianluca Aguzzi</em>, Roberto Casadei, Viroli Mirko</p>
 <p>📧 <a href="mailto:gianluca.aguzzi@unibo.it">gianluca.aguzzi@unibo.it</a></p>
 </section><section>
 <h1 class="accent" id="collective-adaptive-systems">Collective Adaptive Systems</h1>
+<h2 class="highlight" id="context">Context</h2>
 <div class="container">
 <span class="fragment col">
   <h4 id="many-networked-agents">Many Networked Agents</h4>
 <figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network.png" style="height:225px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
 </span>
 <span class="fragment col">
   <h4 id="cyber-physical-systems">Cyber-Physical Systems</h4>
 <figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/cps.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/cps.png" style="height:225px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
 </span>
 <span class="fragment col">
   <h4 id="collective-behaviour">Collective Behaviour</h4>
 <figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ci.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ci.png" style="height:225px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
 </span>
 </div>
+
+
+<span class="fragment ">
+  <h2 class="highlight" id="challenges">Challenges</h2>
+<ul>
+<li>Distribution</li>
+<li>Uncertainties</li>
+<li>Global-to-local mapping</li>
+</ul>
+
+</span>
+
 </section><section>
-<h1 class="accent" id="applications">Applications</h1>
-<div class="container">
-<span class="fragment col">
-  <h3 id="swarm-robotics">Swarm Robotics</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/swarm.jpg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</span>
-<span class="fragment col">
-  <h3 id="crowd-engineering">Crowd Engineering</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/crowd.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</span>
-<span class="fragment col">
-  <h3 id="smart-cities">Smart Cities</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/smart-city.jpg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</span>
-</div>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model">Execution Model</h1>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model-1">Execution Model</h1>
-<h3 id="how">How</h3>
-<h3 id="when">When</h3>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model-2">Execution Model</h1>
-<h3 class="accent" id="how-1">How</h3>
-<div class="container">
-<div class="col ">
-<h4 id="sense">Sense</h4>
-</div>
-<div class="col ">
-<h4 id="compute">Compute</h4>
-</div>
-<div class="col ">
-<h4 id="act">Act</h4>
-</div>
-</div>
-<h3 id="when-1">When</h3>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model-3">Execution Model</h1>
-<h3 class="accent" id="how-2">How</h3>
-<div class="container">
-<div class="col ">
-<h4 class="highlight" id="sense">Sense</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-1.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-<div class="col ">
-<h4 id="compute">Compute</h4>
-</div>
-<div class="col ">
-<h4 id="act" class="highlight">Act</h4>
-</div>
-</div>
-<h3 id="when-2">When</h3>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model-4">Execution Model</h1>
-<h3 class="accent" id="how-3">How</h3>
-<div class="container">
-<div class="col ">
-<h4 id="sense">Sense</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-1.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-<div class="col ">
-<h4 class="highlight" id="compute">Compute</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-2.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-<div class="col ">
-<h4 id="act">Act</h4>
-</div>
-</div>
-<h3 id="when-3">When</h3>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model-5">Execution Model</h1>
-<h3 class="accent" id="how-4">How </h3>
-<div class="container">
-<div class="col ">
-<h4 id="sense">Sense</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-1.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-<div class="col ">
-<h4 id="compute">Compute</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-2.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-<div class="col ">
-<h4 class="highlight" id="act">Act</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-3.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-</div>
-<h3 id="when-4">When</h3>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model-6">Execution Model</h1>
-<h3 id="how-5">How</h3>
-<h3 class="accent" id="when-5">When</h3>
+<h1 id="motivating-example">Motivating example</h1>
+<h2 class="accent" id="distributed-and-resilient-sensing--action">Distributed and resilient sensing &amp; action</h2>
+<h3 id="use-cases">Use cases</h3>
 <ul>
-<li><span class="highlight">Reactive</span>
-<ul>
-<li>Messaged-based</li>
-<li>Sensor-based</li>
-<li>Event-based</li>
+<li>Monitoring Wild fires in forests</li>
+<li>Crowd engineering</li>
+<li>Avalance monitoring</li>
+<li>Agriculture Field monitoring</li>
 </ul>
-</li>
-<li>Proactive</li>
-</ul>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="execution-model-7">Execution Model</h1>
-<h3 id="how-6">How</h3>
-<h3 class="accent" id="when-6">When</h3>
-<ul>
-<li>Reactive
-<ul>
-<li>Messaged-based</li>
-<li>Sensor-based</li>
-<li>Event-based</li>
-</ul>
-</li>
-<li><span class="highlight">Proactive</span></li>
-</ul>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="collective-computing-efficiency">Collective Computing Efficiency</h1>
-<h2 id="goals">Goals</h2>
-<h2 id="approaches">Approaches</h2>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="collective-computing-efficiency-1">Collective Computing Efficiency</h1>
-<h2 class="accent" id="goals-1">Goals</h2>
-
-
- <ul class=""> 
-<li class="fragment " style="color: #888;">
-<p>Reduce power Consumption
-<span class="fragment highlight"><i class="fas  fa-fa  fa-arrow-right  fa-2 "> </i> Green computing</span></p>
-</li>
-<li class="fragment " style="color: #888;">
-<p>Improve <strong>Convergence time</strong> to desired <em>emergent</em></p>
-</li>
-<li class="fragment " style="color: #888;">
-<p><em>Multi-objective</em> nature</p>
-</li>
-
- </ul> 
-
-<h2 id="approaches-1">Approaches</h2>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="collective-computing-efficiency-2">Collective Computing Efficiency</h1>
-<h2 id="goals-2">Goals</h2>
-<h2 class="accent" id="approaches-2">Approaches</h2>
-
-
- <ul class=""> 
-<li class="fragment " style="color: #888;">
-<p>Rule-Based Schedulers</p>
-</li>
-<li class="fragment " style="color: #888;">
-<p><strong>Reinforcement Learning Schedulers</strong></p>
-</li>
-</ul></section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="aggregate-computing">Aggregate Computing</h1>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="aggregate-computing-1">Aggregate Computing</h1>
-<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
-<div class="container">
-<div class="col ">
-</div></div></section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="aggregate-computing">Aggregate Computing</h1>
-<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
-<div class="container">
-<div class="col ">
-<h3 class="accent" id="computational-field">Computational Field</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ac.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div> 
-</div>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="aggregate-computing-1">Aggregate Computing</h1>
-<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
-<div class="container">
-<div class="col ">
-<h3 class="accent" id="computational-field">Computational Field</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ac.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div> 
-<div class="col ">
-<h3 class="accent" id="field-calculus">Field Calculus</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/high-level-examples.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div> 
-</div>
-</section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
-<h1 id="aggregate-computing-2">Aggregate Computing</h1>
-<p>A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours</p>
-<div class="container">
-<div class="col ">
-<h3 class="accent" id="computational-field">Computational Field</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ac.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div> 
-<div class="col ">
-<h3 class="accent" id="field-calculus">Field Calculus</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/high-level-examples.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-<div class="col ">
-<h3 class="accent" id="composable-api">Composable API</h3>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/full-stack.png" style="height:450px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</div>
-</div>
 </section><section>
-<h1 id="execution-model">Execution Model</h1>
-<p>Proactive and Periodioc execution of <strong><span class="accent">rounds</span></strong></p>
-<div class="container">
-<div class="col ">
- <ol class=""> 
-<li class="fragment fade-in" data-fragment-index="0" style="color: #888;">
-<h4 class="highlight" id="context-acquisition">Context Acquisition</h4>
-<ul>
-<li>Sensors Data</li>
-<li>Neighbourhood Information</li>
-</ul>
-</li>
-<li class="fragment fade-in" data-fragment-index="1" style="color: #888;">
-<h4 class="highlight" id="program-evaluation">Program Evaluation</h4>
-<ul>
-<li><strong>Export</strong> Generation</li>
-</ul>
-</li>
-<li class="fragment fade-in" data-fragment-index="2" style="color: #888;">
-<h4 class="highlight" id="context-action">Context Action</h4>
-<ul>
-<li><strong>Export</strong> Sharing</li>
-<li>Actuations</li>
-</ul>
-</li>
- </ol> 
-</div>
-<div class="col r-stack">
-<span class="fragment fade-in" data-fragment-index="0">
-  <figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/execution-steps-0.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</span>
-<span class="fragment fade-in" data-fragment-index="1">
-  <figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/execution-steps-1.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</span>
-<span class="fragment fade-in" data-fragment-index="2">
-  <figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/execution-steps-2.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</span>
-</div>
-</div>
-</section><section>
+<h1 id="how">How</h1>
 <h2 class="accent" id="collective-pattern">Collective pattern</h2>
+<h3 class="highlight" id="building-block-for-cas-applications">Building block for CAS applications</h3>
 <div class="container">
 <span class="fragment col">
   <h4 id="gradient-cast">Gradient Cast</h4>
-<figure class="">
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#719e07">def</span> diffuse<span style="color:#719e07">(</span>center<span style="color:#719e07">,</span> data<span style="color:#719e07">,</span> accumulator<span style="color:#719e07">)</span>
+</span></span></code></pre></div><figure class="">
     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network-downstream2.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
@@ -376,7 +93,8 @@
 </span>
 <span class="fragment col">
   <h4 id="data-collection">Data collection</h4>
-<figure class="">
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#719e07">def</span> collect<span style="color:#719e07">(</span>path<span style="color:#719e07">,</span> accumulator<span style="color:#719e07">,</span> data<span style="color:#719e07">)</span>
+</span></span></code></pre></div><figure class="">
     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network-upstream.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
@@ -384,56 +102,280 @@
 </span>
 <span class="fragment col">
   <h4 id="sparse-choice">Sparse Choice</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network-candidates.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#719e07">def</span> leaderElection<span style="color:#719e07">(</span>grain<span style="color:#719e07">)</span>
+</span></span></code></pre></div><figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/leaders.svg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
 <p>Distributed leader election</p>
 </span>
 </div>
+
+
 <span class="fragment ">
   <p><i class="fas  fa-thumbs-up "> </i>  <span class="accent"><strong>Self-organising &amp; self-stabilising blocks</strong></span></p>
+
 </span>
+  
 </section><section>
-<h1 id="contribution">Contribution</h1>
-<p>Learning to reduce power consumption for <em>self-stabilising</em> building block</p>
-<h2 id="benefits">Benefits</h2>
+<h1 id="high-level-specification">High-Level specification</h1>
+<h2 class="accent" id="general-schema">General schema</h2>
+<p>
+</p><div class="col r-stack">
+<span class="fragment fade-in-then-out" data-fragment-index="0">
+   <figure class="">
+     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/leaders.svg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+     <figcaption>  </figcaption>
+   </figure>
+</span>
+<span class="fragment fade-in-then-semi-out" data-fragment-index="1">
+   <figure class="">
+     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network-downstream2.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+     <figcaption>  </figcaption>
+   </figure>
+</span>
+<span class="fragment fade-in-then-semi-out" data-fragment-index="2">
+   <figure class="">
+     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network-upstream.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+     <figcaption>  </figcaption>
+   </figure>
+</span>
+<span class="fragment " data-fragment-index="3">
+   <figure class="">
+     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/network-regions.svg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+     <figcaption>  </figcaption>
+   </figure>
+</span>
+
+</div>
+
+<div class="col r-stack">
+<span class="fragment fade-in-then-out w50" data-fragment-index="0">
+  <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#719e07">val</span> centers <span style="color:#719e07">=</span> leaderElection<span style="color:#719e07">(</span>grain<span style="color:#719e07">)</span>
+</span></span></code></pre></div>
+</span>
+<span class="fragment fade-in-then-out w50" data-fragment-index="1">
+  <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#719e07">val</span> centers <span style="color:#719e07">=</span> leaderElection<span style="color:#719e07">(</span>grain<span style="color:#719e07">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">val</span> pathTo <span style="color:#719e07">=</span> diffuse<span style="color:#719e07">(</span>centers<span style="color:#719e07">,</span> <span style="color:#2aa198">0</span><span style="color:#719e07">,</span> <span style="color:#719e07">_</span> <span style="color:#719e07">+</span> connectionRange<span style="color:#719e07">())</span>
+</span></span></code></pre></div>
+</span>
+<span class="fragment fade-in-then-out w75" data-fragment-index="2">
+  <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#719e07">val</span> centers <span style="color:#719e07">=</span> leaderElection<span style="color:#719e07">(</span>grain<span style="color:#719e07">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">val</span> pathTo <span style="color:#719e07">=</span> diffuse<span style="color:#719e07">(</span>centers<span style="color:#719e07">,</span> <span style="color:#2aa198">0</span><span style="color:#719e07">,</span> <span style="color:#719e07">_</span> <span style="color:#719e07">+</span> connectionRange<span style="color:#719e07">())</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">val</span> regionPerception <span style="color:#719e07">=</span> collect<span style="color:#719e07">(</span>pathTo<span style="color:#719e07">,</span> sense<span style="color:#719e07">(</span><span style="color:#2aa198">"perception"</span><span style="color:#719e07">),</span> accumulator<span style="color:#719e07">)</span>
+</span></span></code></pre></div>
+</span>
+<span class="fragment w75" data-fragment-index="3">
+  <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#719e07">val</span> centers <span style="color:#719e07">=</span> leaderElection<span style="color:#719e07">(</span>grain<span style="color:#719e07">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">val</span> pathTo <span style="color:#719e07">=</span> diffuse<span style="color:#719e07">(</span>centers<span style="color:#719e07">,</span> <span style="color:#2aa198">0</span><span style="color:#719e07">,</span> <span style="color:#719e07">_</span> <span style="color:#719e07">+</span> connectionRange<span style="color:#719e07">())</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">val</span> regionPerception <span style="color:#719e07">=</span> collect<span style="color:#719e07">(</span>pathTo<span style="color:#719e07">,</span> sense<span style="color:#719e07">(</span><span style="color:#2aa198">"perception"</span><span style="color:#719e07">),</span> accumulator<span style="color:#719e07">)</span>
+</span></span><span style="display:flex;"><span>diffuse<span style="color:#719e07">(</span>centers<span style="color:#719e07">,</span> centerDecisionUsing<span style="color:#719e07">(</span>regionPerception<span style="color:#719e07">),</span> identity<span style="color:#719e07">)</span>
+</span></span></code></pre></div>
+</span>
+
+</div><p></p>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-transition="slide">
+<h2 class="accent" id="execution-model">Execution Model</h2>
+<div class="container">
+<div class="col ">
+<h3 class="highlight" id="behaviour">Behaviour</h3>
+<p><strong>Loop</strong> of three phases</p>
+<h5 id="sense-i-classfa-fa-arrow-righti-compute-i-classfa-fa-arrow-righti-act">Sense <i class="fa fa-arrow-right"></i> Compute <i class="fa fa-arrow-right"></i> Act</h5>
+<figure class="">
+    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/single-agent-rev-3.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
 <ul>
-<li>RL applied in the <strong>middleware</strong> – does not change the semantic of Aggregate Computing</li>
-<li>Separation between the <em>Functional</em> aspect (i.e., the aggregate code) and <em>Non-Functional</em> aspects (i.e., )</li>
+<li>Sense deals with <em>neighborhood</em> information retrieval &amp; <em>environment</em> perceptions</li>
+<li>Compute performs the <em>main logic</em> of the application</li>
+<li>Act executes action following the result from Compute phase</li>
 </ul>
-<h2 id="idea">Idea</h2>
+</div>
+<div class="col ">
+<h3 class="highlight" id="scheduling">Scheduling</h3>
 <ul>
-<li><strong>Time-based</strong> schedulers</li>
-<li>Reduce the <em>round frequency</em> during stable conditions…</li>
-<li>… Maintaining a <strong>good reactivity</strong> with respect to <em>environmental changes</em></li>
+<li><em>Message-based</em>
+<ul>
+<li>Execution triggered by messages received from the other</li>
 </ul>
-</section><section>
-<h2 class="accent" id="general-idea">General Idea</h2>
+</li>
+<li><em>Sensor-based</em>
+<ul>
+<li>Changes in the <strong>environment</strong> <em>trigger</em> execution</li>
+</ul>
+</li>
+<li><em>Time-Based</em>
+<ul>
+<li>With a certain rate, nodes perform an execution step</li>
+</ul>
+</li>
+<li>Event-based</li>
+</ul>
+</div>
+</div>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<h2 id="goals">Goals</h2>
+<h2 id="approaches">Approaches</h2>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency-1">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<ul>
+<li>Same <em>Global</em> specification (e.g., Distributed Sensing &amp; Act)</li>
+</ul>
+<h2 id="goals-1">Goals</h2>
+<h2 id="approaches-1">Approaches</h2>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency-2">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<ul>
+<li>Same <em>Global</em> specification (e.g., Distributed Sensing &amp; Act)</li>
+<li>Several <em>Execution</em> strategies</li>
+</ul>
+<h2 id="goals-2">Goals</h2>
+<h2 id="approaches-2">Approaches</h2>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency-3">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<ul>
+<li>Same <em>Global</em> specification (e.g., Distributed Sensing &amp; Act)</li>
+<li>Several <em>Execution</em> strategies</li>
+<li>Collective Execution Strategies <strong>influence</strong> the <em>Global</em> result</li>
+</ul>
+<h2 id="goals-3">Goals</h2>
+<h2 id="approaches-3">Approaches</h2>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency-4">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<ul>
+<li>Same <em>Global</em> specification (e.g., Distributed Sensing &amp; Act)</li>
+<li>Several <em>Execution</em> strategies</li>
+<li>Collective Execution Strategies <strong>influence</strong> the <em>Global</em> result</li>
+</ul>
+<h2 class="accent" id="goals-4">Goals</h2>
+<ul>
+<li>Reduce power Consumption <span class="highlight"><i class="fas  fa-fa  fa-arrow-right  fa-2 "> </i> Green computing</span></li>
+<li>Improve <strong>convergence time</strong> to the desired <em>emergent</em></li>
+<li><em>Multi-objective</em> nature</li>
+</ul>
+<h2 id="approaches-4">Approaches</h2>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency-5">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<ul>
+<li>Same <em>Global</em> specification (e.g., Distributed Sensing &amp; Act)</li>
+<li>Several <em>Execution</em> strategies</li>
+<li>Collective Execution Strategies <strong>influence</strong> the <em>Global</em> result</li>
+</ul>
+<h2 id="goals-5">Goals</h2>
+<ul>
+<li>Reduce power Consumption <span class="highlight"><i class="fas  fa-fa  fa-arrow-right  fa-2 "> </i> Green computing</span></li>
+<li>Improve <strong>convergence time</strong> to the desired <em>emergent</em></li>
+<li><em>Multi-objective</em> nature</li>
+</ul>
+<h2 class="accent" id="approaches-5">Approaches</h2>
+
+
+ <ul class=""> 
+<li class="fragment " style="color: #888;">
+Rule-Based Schedulers
+</li>
+<li class="fragment " style="color: #888;">
+<strong>Reinforcement Learning Schedulers</strong>
+</li>
+</ul></section><section>
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<h2 id="high-consumption-fast-convergence">High Consumption, fast convergence</h2>
 <video class="video-shortcode" preload="" controls="">
-  <source src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/general-idea.mp4" type="">
+  <source src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/fast.mp4" type="">
   There should have been a video here but your browser does not seem
   to support it.
 </video>
 <style>
 .video-shortcode {
-  height: auto;
+  height: 40vh;
+}
+</style>
+</section><section>
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency-1">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<h2 id="low-consumption-slow-convergence">Low Consumption, slow convergence</h2>
+<video class="video-shortcode" preload="" controls="">
+  <source src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/slow.mp4" type="">
+  There should have been a video here but your browser does not seem
+  to support it.
+</video>
+<style>
+.video-shortcode {
+  height: 40vh;
+}
+</style>
+</section><section>
+<h1 id="on-span-classhighlightcollectivespan-computing-efficiency-2">On <span class="highlight">Collective</span> Computing Efficiency</h1>
+<h2 id="goal-adaptive-solution">Goal: adaptive solution</h2>
+<video class="video-shortcode" preload="" controls="">
+  <source src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/adaptive.mp4" type="">
+  There should have been a video here but your browser does not seem
+  to support it.
+</video>
+<style>
+.video-shortcode {
+  height: 40vh;
 }
 </style>
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="contribution">Contribution</h1>
+<p>Learning to reduce power consumption for <em>self-stabilising</em> building blocks (i.e., <strong>gradient-cast</strong>, <strong>data collection</strong>, <strong>sparse choice</strong>)</p>
+<ul>
+<li><strong>Reference Learning Technique</strong> <i class="fa fa-arrow-right"></i> Value-Based Reiforcement Learning (e.g., <em>Q-Learning</em>)</li>
+<li><strong>Reference Framework</strong> <i class="fa fa-arrow-right"></i> <strong>Aggregate Computing</strong>: A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours
+<ul>
+<li>Good match for expressing our solution</li>
+<li>High Potential-impact in the Aggregate Computing research</li>
+</ul>
+</li>
+</ul>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="contribution-1">Contribution</h1>
+<p>Learning to reduce power consumption for <em>self-stabilising</em> building blocks (i.e., <strong>gradient-cast</strong>, <strong>data collection</strong>, <strong>sparse choice</strong>)</p>
+<h2 id="benefits">Benefits</h2>
+<ul>
+<li>RL applied in the <strong>middleware</strong> – does not change the <strong>semantic</strong> of Aggregate Computing</li>
+<li>Separation between the <em>Functional</em> aspect (i.e., the aggregate code) and <em>Non-Functional</em> aspects (i.e., the energy consumption)</li>
+</ul>
+<h2 id="idea">Idea</h2>
+<ul>
+<li><strong>Time-based</strong> schedulers</li>
+<li>Learning how/when to reduce the <em>round frequency</em> …</li>
+<li>… Maintaining a <strong>good reactivity</strong> with respect to <em>environmental changes</em></li>
+</ul>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="learning-settings">Learning Settings</h1>
-<div class="container">
-<span class="fragment col" data-fragment-index="0">
-  <p><span class="accent"><strong>Multi Agent Systems</strong></span></p>
+<span class="fragment " data-fragment-index="0">
+  <p><strong>Multi (Many) Agent System</strong></p>
+<ul>
+<li>CASs foster systems with hundreds of computational entities</li>
+</ul>
 </span>
-<span class="fragment col" data-fragment-index="1">
-  <p><span class="accent"><strong>Homogenous Behaviour</strong></span></p>
+<span class="fragment " data-fragment-index="1">
+  <p><strong>Homogenous Behaviour</strong></p>
+<ul>
+<li>Complexity emerges from interactions</li>
+<li>Typical choice in swarm-like system</li>
+</ul>
 </span>
-<span class="fragment col" data-fragment-index="2">
-  <p><span class="accent"><strong>Centralised Traning Decentralised Execution</strong></span></p>
+<span class="fragment " data-fragment-index="2">
+  <p><strong>Centralised Traning Decentralised Execution</strong></p>
+<ul>
+<li>Global information during learning using the Q update</li>
+<li>distributed control at runtime <i class="fa fa-arrow-right"></i> <strong>state built from only local data</strong></li>
+<li>learning eased by the global view</li>
+</ul>
 </span>
-</div>
 <div class="col r-stack">
 <span class="fragment fade-in" data-fragment-index="0">
   <figure class="">
@@ -469,6 +411,7 @@
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="learning-settings-1">Learning Settings</h1>
+<p>For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:</p>
 <ul>
 <li>State: local output derivate</li>
 <li>Actions: next wake-up time</li>
@@ -477,6 +420,7 @@
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="learning-settings-2">Learning Settings</h1>
+<p>For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:</p>
 <ul>
 <li><strong>State</strong>: local output derivate
 <ul>
@@ -490,6 +434,7 @@
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="learning-settings-3">Learning Settings</h1>
+<p>For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:</p>
 <ul>
 <li>State: local output derivate</li>
 <li><strong>Actions</strong>: next wake-up time
@@ -502,6 +447,7 @@
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="learning-settings-4">Learning Settings</h1>
+<p>For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:</p>
 <ul>
 <li>State: local output derivate</li>
 <li>Actions: next wake-up time</li>
@@ -518,32 +464,44 @@
 </li>
 </ul>
 </section>
-<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true" data-transition="slide">
 <h1 id="simulation-configuration">Simulation Configuration</h1>
+<h2 class="accent" id="goal">Goal</h2>
+<ul>
+<li>Learn to reduce <em>power consumption</em>
+<ul>
+<li>Blocks: <strong>Gradient-cast</strong> and <strong>Data collection</strong></li>
+</ul>
+</li>
+<li>Maintain a good <em>convergence time</em></li>
+<li><strong>Dual</strong>: with the same power, learn to converge quicker</li>
+<li>Verify if the policy generalizes (i.e., work in other deployment)</li>
+</ul>
 <h2 id="training">Training</h2>
 <h2 id="evaluation">Evaluation</h2>
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="simulation-configuration-1">Simulation Configuration</h1>
+<h2 id="goal-1">Goal</h2>
 <h2 class="accent" id="training-1">Training</h2>
 <ul>
 <li>100 nodes in place in a semi-random grid</li>
-<li>each simulation as a random seed</li>
+<li>each simulation has a random seed</li>
 <li>performance verified in different conditions</li>
 </ul>
 <h2 id="evaluation-1">Evaluation</h2>
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="simulation-configuration-2">Simulation Configuration</h1>
+<h2 id="goal-2">Goal</h2>
 <h2 class="accent" id="training-2">Training</h2>
 <ul>
 <li>100 nodes in place in a semi-random grid</li>
-<li>each simulation as a random seed</li>
+<li>each simulation has a random seed</li>
 <li>performance verified in different conditions
 <ul>
 <li>multiple seek nodes</li>
 <li>multiple environmental changes</li>
-<li>different self-stabilising blocks</li>
 </ul>
 </li>
 </ul>
@@ -551,8 +509,24 @@
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h1 id="simulation-configuration-3">Simulation Configuration</h1>
-<h2 id="training-3">Training</h2>
-<h2 class="accent" id="evaluation-3">Evaluation</h2>
+<h2 class="accent" id="training-3">Training</h2>
+<video class="video-shortcode" preload="" controls="">
+  <source src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/scenario.mp4" type="">
+  There should have been a video here but your browser does not seem
+  to support it.
+</video>
+<style>
+.video-shortcode {
+  height: 40vh;
+}
+</style>
+<h2 id="evaluation-3">Evaluation</h2>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h1 id="simulation-configuration-4">Simulation Configuration</h1>
+<h2 id="goal-3">Goal</h2>
+<h2 id="training-4">Training</h2>
+<h2 class="accent" id="evaluation-4">Evaluation</h2>
 <ul>
 <li>Verifying the influence of different seeds</li>
 <li>Control the performance by varying the nodes in the system</li>
@@ -601,6 +575,11 @@
     <figcaption>  </figcaption>
   </figure>
 </section><section>
+<h1 id="conclusion">Conclusion</h1>
+<ul>
+<li>The system eventually learns a policy that reduces the collective power consumption</li>
+<li>The same policy work for different deployment</li>
+</ul>
 <h1 id="future-work">Future Work</h1>
 <ul>
 <li>Using <em>scheduling policy</em> as action
@@ -615,19 +594,18 @@
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-background-color="black" data-background-iframe="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/waves-thanks.html" data-preload="true" data-transition="zoom">
 <h1 class="white-text" id="thank-you">Thank you!</h1>
-</section></div>
+
+  
+
+</section>
+
+  
+
+
 </div>
-  
-
-
-
-  
-
-
-
       
 
-    
+    </div>
 <script type="text/javascript" src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-hugo/object-assign.js"></script>
 
 <a href="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/reveal-js/dist/print/" id="print-location" style="display: none;"></a>
