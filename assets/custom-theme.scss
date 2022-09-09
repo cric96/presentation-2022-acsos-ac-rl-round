@@ -134,3 +134,26 @@ em {
 strong {
 	color: $cyan;
 }
+
+.reveal code {
+	color: rgb(209, 28, 124);
+	font-family: "JetBrains Mono", "Oxygen Mono", "Roboto Mono", "Ubuntu Mono", "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+
+.reveal pre {
+	margin: 1em auto;
+}
+
+.w50 {
+	width: 50%
+}
+
+.w75 {
+	width: 75%
+}
+
+.w100 {
+
+	width: 100%
+}
