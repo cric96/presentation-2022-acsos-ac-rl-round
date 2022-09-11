@@ -41,13 +41,6 @@
   </figure>
 </span>
 <span class="fragment col">
-  <h4 id="cyber-physical-systems">Cyber-Physical Systems</h4>
-<figure class="">
-    <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/cps.png" style="height:225px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
-    <figcaption>  </figcaption>
-  </figure>
-</span>
-<span class="fragment col">
   <h4 id="collective-behaviour">Collective Behaviour</h4>
 <figure class="">
     <img src="https://cric96.github.io/presentation-2022-acsos-ac-rl-round/ci.png" style="height:225px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
@@ -69,13 +62,13 @@
 
 </section><section>
 <h1 id="motivating-example">Motivating example</h1>
-<h2 class="accent" id="distributed-and-resilient-sensing--action">Distributed and resilient sensing &amp; action</h2>
+<h2 class="accent" id="distributed-and-resilient-sensing">Distributed and resilient sensing</h2>
 <h3 id="use-cases">Use cases</h3>
 <ul>
-<li>Monitoring Wild fires in forests</li>
+<li>Monitoring wild fires in forests</li>
 <li>Crowd engineering</li>
 <li>Avalanche monitoring</li>
-<li>Agriculture Monitoring System</li>
+<li>Agriculture monitoring system</li>
 </ul>
 <div class="container">
 <div class="col ">
@@ -100,7 +93,7 @@
 </section><section>
 <h1 id="how">How</h1>
 <h2 class="accent" id="collective-pattern">Collective pattern</h2>
-<h3 class="highlight" id="building-block-for-cas-applications">Building block for CAS applications</h3>
+<h3 class="highlight" id="building-blocks-for-cas-applications">Building blocks for CAS applications</h3>
 <div class="container">
 <span class="fragment col">
   <h4 id="gradient-cast">Gradient Cast</h4>
@@ -276,7 +269,7 @@
 </ul>
 <h2 class="accent" id="goals-4">Goals</h2>
 <ul>
-<li>Reduce power Consumption <span class="highlight"><i class="fas  fa-fa  fa-arrow-right  fa-2 "> </i> Green computing</span></li>
+<li>Reduce power consumption <span class="highlight"><i class="fas  fa-fa  fa-arrow-right  fa-2 "> </i> Green computing</span></li>
 <li>Improve <strong>convergence time</strong> to the desired <em>emergent</em></li>
 <li><em>Multi-objective</em> nature</li>
 </ul>
@@ -291,7 +284,7 @@
 </ul>
 <h2 id="goals-5">Goals</h2>
 <ul>
-<li>Reduce power Consumption <span class="highlight"><i class="fas  fa-fa  fa-arrow-right  fa-2 "> </i> Green computing</span></li>
+<li>Reduce power consumption <span class="highlight"><i class="fas  fa-fa  fa-arrow-right  fa-2 "> </i> Green computing</span></li>
 <li>Improve <strong>convergence time</strong> to the desired <em>emergent</em></li>
 <li><em>Multi-objective</em> nature</li>
 </ul>
@@ -349,11 +342,11 @@ Rule-Based Schedulers
 <h1 id="contribution">Contribution</h1>
 <p>Learning to reduce power consumption for <em>self-stabilising</em> building blocks (i.e., <strong>gradient-cast</strong>, <strong>data collection</strong>, <strong>sparse choice</strong>)</p>
 <ul>
-<li><strong>Reference Learning Technique</strong> <i class="fa fa-arrow-right"></i> Value-Based Reiforcement Learning (e.g., <em>Q-Learning</em>)</li>
+<li><strong>Reference Learning Technique</strong> <i class="fa fa-arrow-right"></i> Value-Based Reinforcement Learning (e.g., <em>Q-Learning</em>)</li>
 <li><strong>Reference Framework</strong> <i class="fa fa-arrow-right"></i> <strong>Aggregate Computing</strong>: A <span class="accent">top-down</span> <em><span class="highlight">global to local</span></em> <span class="accent">functional</span> programming approach to express <span class="accent">self-organising</span> collective behaviours
 <ul>
 <li>Good match for expressing our solution</li>
-<li>High Potential-impact in the Aggregate Computing research</li>
+<li>High potential-impact in the Aggregate Computing research</li>
 </ul>
 </li>
 </ul>
@@ -462,7 +455,7 @@ Rule-Based Schedulers
 <li>Fixed set: <code>[100ms, 200ms, 500ms, 1s]</code></li>
 </ul>
 </li>
-<li>Reward: weight the next-wake time time and the consumption</li>
+<li>Reward: weight the next-wake time and the consumption</li>
 </ul>
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
@@ -495,7 +488,7 @@ Rule-Based Schedulers
 </li>
 <li>Maintain a good <em>convergence time</em></li>
 <li><strong>Dual</strong>: with the same power, learn to converge quicker</li>
-<li>Verify if the policy generalizes (i.e., work in other deployment)</li>
+<li>Verify if the policy generalizes (i.e., work in other deployments)</li>
 </ul>
 <h2 id="training">Training</h2>
 <h2 id="evaluation">Evaluation</h2>
@@ -549,7 +542,6 @@ Rule-Based Schedulers
 <h2 id="training-4">Training</h2>
 <h2 class="accent" id="evaluation-4">Evaluation</h2>
 <ul>
-<li>Verifying the influence of different seeds</li>
 <li>Control the performance by varying the nodes in the system</li>
 <li>Compare with a hand-mand policy as a reference</li>
 </ul>
@@ -600,15 +592,11 @@ Rule-Based Schedulers
 <h1 id="conclusion">Conclusion</h1>
 <ul>
 <li>The system eventually learns a policy that reduces the collective power consumption</li>
-<li>The same policy work for different deployment</li>
+<li>The same policy work for different deployments</li>
 </ul>
 <h1 id="future-work">Future Work</h1>
 <ul>
-<li>Using <em>scheduling policy</em> as action
-<ul>
-<li>Mix <em>sensing-based</em> and <em>time-based</em> schedulers</li>
-</ul>
-</li>
+<li>Using <em>scheduling policy</em> as action</li>
 <li><strong>Deep Learning approaches</strong> to encode local node features</li>
 <li>Using <strong>Multi-Objective Reinforcement Learning</strong> to better represent the problem space.</li>
 <li>Extends Learning to a fully online &amp; distributed version</li>
