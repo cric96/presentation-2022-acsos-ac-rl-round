@@ -31,10 +31,6 @@ aliases = [
 {{< image height="25" src="/network.png" >}} 
 {{% /fragment %}}
 {{% fragment class="col" %}} 
-#### Cyber-Physical Systems
-{{< image height="25" src="/cps.png" >}} 
-{{% /fragment %}}
-{{% fragment class="col" %}} 
 #### Collective Behaviour  
 {{< image height="25" src="/ci.png" >}} 
 {{% /fragment %}}
@@ -50,12 +46,12 @@ aliases = [
 
 # Motivating example
 
-## Distributed and resilient sensing & action {.accent}
+## Distributed and resilient sensing {.accent}
 ### Use cases
-- Monitoring Wild fires in forests
+- Monitoring wild fires in forests
 - Crowd engineering
 - Avalanche monitoring
-- Agriculture Monitoring System
+- Agriculture monitoring system
 
 {{% row %}}
 {{% col %}}
@@ -72,7 +68,7 @@ aliases = [
 ---
 # How
 ## Collective pattern {.accent } 
-### Building block for CAS applications {.highlight}
+### Building blocks for CAS applications {.highlight}
 
 {{% row %}}
 {{% fragment class="col" %}}
@@ -226,7 +222,7 @@ diffuse(centers, centerDecisionUsing(regionPerception), identity)
 - Several *Execution* strategies
 - Collective Execution Strategies **influence** the *Global* result
 ## Goals {.accent}
-- Reduce power Consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
+- Reduce power consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
 - Improve **convergence time** to the desired *emergent*
 - *Multi-objective* nature
 
@@ -240,7 +236,7 @@ diffuse(centers, centerDecisionUsing(regionPerception), identity)
 - Several *Execution* strategies
 - Collective Execution Strategies **influence** the *Global* result
 ## Goals 
-- Reduce power Consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
+- Reduce power consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
 - Improve **convergence time** to the desired *emergent*
 - *Multi-objective* nature
 ## Approaches {.accent}
@@ -269,10 +265,10 @@ diffuse(centers, centerDecisionUsing(regionPerception), identity)
 # Contribution
 
 Learning to reduce power consumption for *self-stabilising* building blocks (i.e., **gradient-cast**, **data collection**, **sparse choice**)
-- **Reference Learning Technique** <i class="fa fa-arrow-right"></i> Value-Based Reiforcement Learning (e.g., *Q-Learning*)
+- **Reference Learning Technique** <i class="fa fa-arrow-right"></i> Value-Based Reinforcement Learning (e.g., *Q-Learning*)
 - **Reference Framework** <i class="fa fa-arrow-right"></i> **Aggregate Computing**: A {{% accent c="top-down" %}} *{{% highlight c="global to local" %}}* {{% accent c=functional %}} programming approach to express {{% accent c="self-organising" %}} collective behaviours
   - Good match for expressing our solution 
-  - High Potential-impact in the Aggregate Computing research 
+  - High potential-impact in the Aggregate Computing research 
 
 ---
 {{% slide auto-animate=true %}}
@@ -360,7 +356,7 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
 - State: local output derivate
 - **Actions**: next wake-up time
     - Fixed set: `[100ms, 200ms, 500ms, 1s]`
-- Reward: weight the next-wake time time and the consumption
+- Reward: weight the next-wake time and the consumption
 
 ---
 
@@ -385,7 +381,7 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
   - Blocks: **Gradient-cast** and **Data collection**
 - Maintain a good *convergence time* 
 - **Dual**: with the same power, learn to converge quicker
-- Verify if the policy generalizes (i.e., work in other deployment)
+- Verify if the policy generalizes (i.e., work in other deployments)
 ## Training
 
 ## Evaluation
@@ -423,7 +419,6 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
 ## Goal
 ## Training 
 ## Evaluation {.accent}
-- Verifying the influence of different seeds
 - Control the performance by varying the nodes in the system
 - Compare with a hand-mand policy as a reference
 ---
@@ -465,12 +460,11 @@ Repository @ [https://github.com/cric96/experiment-2022-acsos-round-rl](https://
 
 # Conclusion
 - The system eventually learns a policy that reduces the collective power consumption
-- The same policy work for different deployment
+- The same policy work for different deployments
 
 # Future Work
 
 - Using *scheduling policy* as action
-  - Mix *sensing-based* and *time-based* schedulers
 - **Deep Learning approaches** to encode local node features
 - Using **Multi-Objective Reinforcement Learning** to better represent the problem space.
 - Extends Learning to a fully online & distributed version
