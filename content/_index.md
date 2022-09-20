@@ -151,8 +151,9 @@ diffuse(centers, centerDecisionUsing(regionPerception), identity)
 
 {{% col %}}
 ### Behaviour {.highlight}
-**Loop** of three phases
-##### Sense <i class="fa fa-arrow-right"></i> Compute <i class="fa fa-arrow-right"></i> Act
+**Loop** of three phases:
+
+*Sense* <i class="fa fa-arrow-right"></i> *Compute* <i class="fa fa-arrow-right"></i> *Act*
 
 {{< image height="30" src="/single-agent-rev-3.png">}}
 - Sense deals with *neighborhood* information retrieval & *environment* perceptions
@@ -222,9 +223,12 @@ diffuse(centers, centerDecisionUsing(regionPerception), identity)
 - Several *Execution* strategies
 - Collective Execution Strategies **influence** the *Global* result
 ## Goals {.accent}
-- Reduce power consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
-- Improve **convergence time** to the desired *emergent*
-- *Multi-objective* nature
+1. Reduce power consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
+2. Improve **convergence time** to the desired *emergent*
+
+
+ *Multi-objective* nature
+
 
 ## Approaches
 
@@ -236,13 +240,16 @@ diffuse(centers, centerDecisionUsing(regionPerception), identity)
 - Several *Execution* strategies
 - Collective Execution Strategies **influence** the *Global* result
 ## Goals 
-- Reduce power consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
-- Improve **convergence time** to the desired *emergent*
-- *Multi-objective* nature
+1. Reduce power consumption {{% highlight c="{{< fa fa arrow-right 2 >}} Green computing" %}}
+2. Improve **convergence time** to the desired *emergent*
+   
+*Multi-objective* nature
+
+
 ## Approaches {.accent}
 {{% frag-list kind="ul" %}}
 {{% frag-li%}}Rule-Based Schedulers{{% /frag-li %}}
-{{% frag-li%}}**Reinforcement Learning Schedulers**{{% /frag-list %}}
+{{% frag-li%}}**Reinforcement Learning-based Schedulers**{{% /frag-list %}}
 
 ---
 
@@ -276,7 +283,7 @@ Learning to reduce power consumption for *self-stabilising* building blocks (i.e
 
 Learning to reduce power consumption for *self-stabilising* building blocks (i.e., **gradient-cast**, **data collection**, **sparse choice**)
 ## Benefits
-- RL applied in the **middleware** -- does not change the **semantic** of Aggregate Computing
+- RL applied in the **middleware** -- does not change the **semantics** of Aggregate Computing
 - Separation between the *Functional* aspect (i.e., the aggregate code) and *Non-Functional* aspects (i.e., the energy consumption)
 
 ## Idea 
@@ -380,7 +387,7 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
 - Learn to reduce *power consumption*
   - Blocks: **Gradient-cast** and **Data collection**
 - Maintain a good *convergence time* 
-- **Dual**: with the same power, learn to converge quicker
+- **Dual**: with the same power, learn to converge more quickly
 - Verify if the policy generalizes (i.e., work in other deployments)
 ## Training
 
