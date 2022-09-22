@@ -284,7 +284,7 @@ Learning to reduce power consumption for *self-stabilising* building blocks (i.e
 Learning to reduce power consumption for *self-stabilising* building blocks (i.e., **gradient-cast**, **data collection**, **sparse choice**)
 ## Benefits
 - RL applied in the **middleware** -- does not change the **semantics** of Aggregate Computing
-- Separation between the *Functional* aspect (i.e., the aggregate code) and *Non-Functional* aspects (i.e., the energy consumption)
+- Separation between the *Functionals* aspect (i.e., the aggregate code) and *Non-Functional* aspects (i.e., the energy consumption)
 
 ## Idea 
 - **Time-based** schedulers
