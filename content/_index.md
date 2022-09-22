@@ -17,7 +17,7 @@ aliases = [
 **Talk @ ACSOS 2022** 
 {.accent}
 
-🎤 *Gianluca Aguzzi*, Roberto Casadei, Viroli Mirko
+🎤 *Gianluca Aguzzi*, Roberto Casadei, Mirko Viroli
 
 📧 [gianluca.aguzzi@unibo.it](mailto:gianluca.aguzzi@unibo.it)
 
