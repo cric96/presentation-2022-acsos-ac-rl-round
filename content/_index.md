@@ -337,7 +337,7 @@ Learning to reduce power consumption for *self-stabilising* building blocks (i.e
 {{% slide auto-animate=true %}}
 # Learning Settings
 
-For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
+For each time step, each agent record a **$s_t, a_t, r_t$** trajectory, as:
 - State: local output derivate
 - Actions: next wake-up time
 - Reward: near 0 if the output is stable, -1 in the other cases
@@ -347,7 +347,7 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
 {{% slide auto-animate=true %}}
 # Learning Settings
 
-For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
+For each time step, each agent record a **$s_t, a_t, r_t$** trajectory, as:
 - **State**: local output derivate
   - Window of size $w$ of local changes
   - Each element could be `Rising`, `Stable`, `Decreasing`
@@ -359,7 +359,7 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
 {{% slide auto-animate=true %}}
 # Learning Settings
 
-For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
+For each time step, each agent record a **$s_t, a_t, r_t$** trajectory, as:
 - State: local output derivate
 - **Actions**: next wake-up time
     - Fixed set: `[100ms, 200ms, 500ms, 1s]`
@@ -370,7 +370,7 @@ For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
 {{% slide auto-animate=true %}}
 # Learning Settings
 
-For each time step, each agent record a $s_t, a_t, r_t$ trajectory, as:
+For each time step, each agent record a **$s_t, a_t, r_t$** trajectory, as:
 - State: local output derivate
 - Actions: next wake-up time
 - **Reward**: near 0 if the output is stable, -1 in the other cases
