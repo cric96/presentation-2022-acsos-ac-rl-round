@@ -308,7 +308,7 @@ Learning to reduce power consumption for *self-stabilising* building blocks (i.e
 {{% /fragment %}}
 
 {{% fragment index="2" %}}
-**Centralised Traning Decentralised Execution**  
+**Centralised Training Decentralised Execution**  
 - Global information during learning using the Q update
 - distributed control at runtime <i class="fa fa-arrow-right"></i> **state built from only local data**
 - learning eased by the global view
